@@ -1,0 +1,1 @@
+MaintainTestType.ftl

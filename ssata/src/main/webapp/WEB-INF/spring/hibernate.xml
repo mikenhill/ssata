@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Hibernate Session Factory  -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+    	<!-- 
+    	<property name="dataSource">
+    		<ref bean="dataSource" />
+    	</property>
+    	 -->
+    	<property name="hibernateProperties">
+    		<ref bean="hibernateProperties"/>
+    	</property>
+   		<property name="packagesToScan">
+   			<list>
+   				<value>com.salmon.ssata.backend.dto</value>
+   			</list>
+   		</property>
+   		<property name="lobHandler" ref="lobHandler"/>
+	</bean>
+	
+	<bean id="lobHandler" class="org.springframework.jdbc.support.lob.DefaultLobHandler" lazy-init="true"/>
+	
+	<!-- Data Source Configuration -->
+	<bean id="hibernateProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="properties">
+    		<props>
+    			
+    			<!-- Tomcat Context Datasource Properties -->
+				<prop key="hibernate.connection.datasource">java:comp/env/jdbc/sata</prop>
+                <prop key="hibernate.dialect">${jdbc.dialect}</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.jdbc.use_streams_for_binary">true</prop>
+    			<!-- Tomcat Context Datasource Properties -->
+    			
+        		<prop key="hibernate.dialect">${jdbc.dialect}</prop>
+        		<prop key="hibernate.hbm2ddl.auto">update</prop>
+        		<prop key="hibernate.show_sql">true</prop>
+        		<prop key="hibernate.jdbc.use_streams_for_binary">true</prop>
+        	</props>
+        </property>
+	</bean>
+	
+
+	
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory"/>
+		</property>
+	</bean>
+		
+	<!-- Transaction manager for single Hibernate Session Factory  -->
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />	
+	</bean>
+	
+</beans>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompilationUnit BeginColumn="1" BeginLine="1" EndColumn="2" EndLine="21" FindBoundary="false" Image="" SingleLine="false" declarationsAreInDefaultPackage="false">
+    <PackageDeclaration BeginColumn="1" BeginLine="1" EndColumn="33" EndLine="1" FindBoundary="false" Image="" PackageNameImage="com.salmon.ssata.backend" SingleLine="true">
+        <Name BeginColumn="9" BeginLine="1" EndColumn="32" EndLine="1" FindBoundary="false" Image="com.salmon.ssata.backend" SingleLine="true"/>
+    </PackageDeclaration>
+    <TypeDeclaration BeginColumn="1" BeginLine="3" EndColumn="1" EndLine="21" FindBoundary="false" Image="" SingleLine="false">
+        <ClassOrInterfaceDeclaration Abstract="false" BeginColumn="8" BeginLine="3" Default="false" EndColumn="1" EndLine="21" Final="false" FindBoundary="false" Image="BackendException" Interface="false" Modifiers="1" Native="false" Nested="false" PackagePrivate="false" Private="false" Protected="false" Public="true" SingleLine="false" Static="false" Strictfp="false" Synchronized="false" Transient="false" Volatile="false">
+            <ExtendsList BeginColumn="31" BeginLine="3" EndColumn="47" EndLine="3" FindBoundary="false" Image="" SingleLine="true">
+                <ClassOrInterfaceType BeginColumn="39" BeginLine="3" EndColumn="47" EndLine="3" FindBoundary="false" Image="Exception" SingleLine="true"/>
+            </ExtendsList>
+            <ClassOrInterfaceBody BeginColumn="48" BeginLine="3" EndColumn="1" EndLine="21" FindBoundary="false" Image="" SingleLine="false">
+                <ClassOrInterfaceBodyDeclaration AnonymousInnerClass="false" BeginColumn="9" BeginLine="5" EndColumn="74" EndLine="5" EnumChild="false" FindBoundary="false" Image="" SingleLine="true">
+                    <FieldDeclaration Abstract="false" Array="false" ArrayDepth="0" BeginColumn="30" BeginLine="5" Default="false" EndColumn="74" EndLine="5" Final="true" FindBoundary="false" Image="" InterfaceMember="false" Modifiers="52" Native="false" PackagePrivate="false" Private="true" Protected="false" Public="false" SingleLine="true" Static="true" Strictfp="false" Synchronized="false" SyntacticallyFinal="true" SyntacticallyPublic="false" SyntacticallyStatic="true" Transient="false" VariableName="serialVersionUID" Volatile="false">
+                        <Type Array="false" ArrayDepth="0" BeginColumn="30" BeginLine="5" EndColumn="33" EndLine="5" FindBoundary="false" Image="" SingleLine="true" TypeImage="long">
+                            <PrimitiveType Array="false" ArrayDepth="0" BeginColumn="30" BeginLine="5" Boolean="false" EndColumn="33" EndLine="5" FindBoundary="false" Image="long" SingleLine="true"/>
+                        </Type>
+                        <VariableDeclarator BeginColumn="35" BeginLine="5" EndColumn="73" EndLine="5" FindBoundary="false" Image="" SingleLine="true">
+                            <VariableDeclaratorId Array="false" ArrayDepth="0" BeginColumn="35" BeginLine="5" EndColumn="50" EndLine="5" ExceptionBlockParameter="false" FindBoundary="false" Image="serialVersionUID" SingleLine="true"/>
+                            <VariableInitializer BeginColumn="54" BeginLine="5" EndColumn="73" EndLine="5" FindBoundary="false" Image="" SingleLine="true">
+                                <Expression BeginColumn="54" BeginLine="5" EndColumn="73" EndLine="5" FindBoundary="false" Image="" SingleLine="true">
+                                    <PrimaryExpression BeginColumn="54" BeginLine="5" EndColumn="73" EndLine="5" FindBoundary="false" Image="" SingleLine="true">
+                                        <PrimaryPrefix BeginColumn="54" BeginLine="5" EndColumn="73" EndLine="5" FindBoundary="false" Image="" SingleLine="true" SuperModifier="false" ThisModifier="false">
+                                            <Literal BeginColumn="54" BeginLine="5" CharLiteral="false" DoubleLiteral="false" EndColumn="73" EndLine="5" FindBoundary="false" FloatLiteral="false" Image="7865432174499611218L" IntLiteral="false" LongLiteral="true" SingleCharacterStringLiteral="false" SingleLine="true" StringLiteral="false"/>
+                                        </PrimaryPrefix>
+                                    </PrimaryExpression>
+                                </Expression>
+                            </VariableInitializer>
+                        </VariableDeclarator>
+                    </FieldDeclaration>
+                </ClassOrInterfaceBodyDeclaration>
+                <ClassOrInterfaceBodyDeclaration AnonymousInnerClass="false" BeginColumn="5" BeginLine="7" EndColumn="49" EndLine="7" EnumChild="false" FindBoundary="false" Image="" SingleLine="true">
+                    <FieldDeclaration Abstract="false" Array="false" ArrayDepth="0" BeginColumn="13" BeginLine="7" Default="false" EndColumn="49" EndLine="7" Final="false" FindBoundary="false" Image="" InterfaceMember="false" Modifiers="4" Native="false" PackagePrivate="false" Private="true" Protected="false" Public="false" SingleLine="true" Static="false" Strictfp="false" Synchronized="false" SyntacticallyFinal="false" SyntacticallyPublic="false" SyntacticallyStatic="false" Transient="false" VariableName="errorCode" Volatile="false">
+                        <Type Array="false" ArrayDepth="0" BeginColumn="13" BeginLine="7" EndColumn="18" EndLine="7" FindBoundary="false" Image="" SingleLine="true" TypeImage="String">
+                            <ReferenceType Array="false" ArrayDepth="0" BeginColumn="13" BeginLine="7" EndColumn="18" EndLine="7" FindBoundary="false" Image="" SingleLine="true">
+                                <ClassOrInterfaceType BeginColumn="13" BeginLine="7" EndColumn="18" EndLine="7" FindBoundary="false" Image="String" SingleLine="true"/>
+                            </ReferenceType>
+                        </Type>
+                        <VariableDeclarator BeginColumn="20" BeginLine="7" EndColumn="48" EndLine="7" FindBoundary="false" Image="" SingleLine="true">
+                            <VariableDeclaratorId Array="false" ArrayDepth="0" BeginColumn="20" BeginLine="7" EndColumn="28" EndLine="7" ExceptionBlockParameter="false" FindBoundary="false" Image="errorCode" SingleLine="true"/>
+                            <VariableInitializer BeginColumn="30" BeginLine="7" EndColumn="48" EndLine="7" FindBoundary="false" Image="" SingleLine="true">
+                                <Expression BeginColumn="30" BeginLine="7" EndColumn="48" EndLine="7" FindBoundary="false" Image="" SingleLine="true">
+                                    <PrimaryExpression BeginColumn="30" BeginLine="7" EndColumn="48" EndLine="7" FindBoundary="false" Image="" SingleLine="true">
+                                        <PrimaryPrefix BeginColumn="30" BeginLine="7" EndColumn="48" EndLine="7" FindBoundary="false" Image="" SingleLine="true" SuperModifier="false" ThisModifier="false">
+                                            <Literal BeginColumn="30" BeginLine="7" CharLiteral="false" DoubleLiteral="false" EndColumn="48" EndLine="7" FindBoundary="false" FloatLiteral="false" Image="&quot;BACKEND_EXCEPTION&quot;" IntLiteral="false" LongLiteral="false" SingleCharacterStringLiteral="false" SingleLine="true" StringLiteral="true"/>
+                                        </PrimaryPrefix>
+                                    </PrimaryExpression>
+                                </Expression>
+                            </VariableInitializer>
+                        </VariableDeclarator>
+                    </FieldDeclaration>
+                </ClassOrInterfaceBodyDeclaration>
+                <ClassOrInterfaceBodyDeclaration AnonymousInnerClass="false" BeginColumn="5" BeginLine="9" EndColumn="5" EndLine="11" EnumChild="false" FindBoundary="false" Image="" SingleLine="false">
+                    <ConstructorDeclaration Abstract="false" BeginColumn="12" BeginLine="9" Default="false" EndColumn="5" EndLine="11" Final="false" FindBoundary="false" Image="" Modifiers="1" Native="false" PackagePrivate="false" ParameterCount="1" Private="false" Protected="false" Public="true" SingleLine="false" Static="false" Strictfp="false" Synchronized="false" Transient="false" Volatile="false" containsComment="false">
+                        <FormalParameters BeginColumn="28" BeginLine="9" EndColumn="43" EndLine="9" FindBoundary="false" Image="" ParameterCount="1" SingleLine="true">
+                            <FormalParameter Abstract="false" Array="false" ArrayDepth="0" BeginColumn="29" BeginLine="9" Default="false" EndColumn="42" EndLine="9" Final="false" FindBoundary="false" Image="" Modifiers="0" Native="false" PackagePrivate="true" Private="false" Protected="false" Public="false" SingleLine="true" Static="false" Strictfp="false" Synchronized="false" Transient="false" Varargs="false" Volatile="false">
+                                <Type Array="false" ArrayDepth="0" BeginColumn="29" BeginLine="9" EndColumn="34" EndLine="9" FindBoundary="false" Image="" SingleLine="true" TypeImage="String">
+                                    <ReferenceType Array="false" ArrayDepth="0" BeginColumn="29" BeginLine="9" EndColumn="34" EndLine="9" FindBoundary="false" Image="" SingleLine="true">
+                                        <ClassOrInterfaceType BeginColumn="29" BeginLine="9" EndColumn="34" EndLine="9" FindBoundary="false" Image="String" SingleLine="true"/>
+                                    </ReferenceType>
+                                </Type>
+                                <VariableDeclaratorId Array="false" ArrayDepth="0" BeginColumn="36" BeginLine="9" EndColumn="42" EndLine="9" ExceptionBlockParameter="false" FindBoundary="false" Image="message" SingleLine="true"/>
+                            </FormalParameter>
+                        </FormalParameters>
+                        <ExplicitConstructorInvocation ArgumentCount="1" BeginColumn="9" BeginLine="10" EndColumn="23" EndLine="10" FindBoundary="false" Image="" SingleLine="true" Super="true" This="false">
+                            <Arguments ArgumentCount="1" BeginColumn="14" BeginLine="10" EndColumn="22" EndLine="10" FindBoundary="false" Image="" SingleLine="true">
+                                <ArgumentList BeginColumn="15" BeginLine="10" EndColumn="21" EndLine="10" FindBoundary="false" Image="" SingleLine="true">
+                                    <Expression BeginColumn="15" BeginLine="10" EndColumn="21" EndLine="10" FindBoundary="false" Image="" SingleLine="true">
+                                        <PrimaryExpression BeginColumn="15" BeginLine="10" EndColumn="21" EndLine="10" FindBoundary="false" Image="" SingleLine="true">
+                                            <PrimaryPrefix BeginColumn="15" BeginLine="10" EndColumn="21" EndLine="10" FindBoundary="false" Image="" SingleLine="true" SuperModifier="false" ThisModifier="false">
+                                                <Name BeginColumn="15" BeginLine="10" EndColumn="21" EndLine="10" FindBoundary="false" Image="message" SingleLine="true"/>
+                                            </PrimaryPrefix>
+                                        </PrimaryExpression>
+                                    </Expression>
+                                </ArgumentList>
+                            </Arguments>
+                        </ExplicitConstructorInvocation>
+                    </ConstructorDeclaration>
+                </ClassOrInterfaceBodyDeclaration>
+                <ClassOrInterfaceBodyDeclaration AnonymousInnerClass="false" BeginColumn="5" BeginLine="13" EndColumn="5" EndLine="16" EnumChild="false" FindBoundary="false" Image="" SingleLine="false">
+                    <ConstructorDeclaration Abstract="false" BeginColumn="12" BeginLine="13" Default="false" EndColumn="5" EndLine="16" Final="false" FindBoundary="false" Image="" Modifiers="1" Native="false" PackagePrivate="false" ParameterCount="2" Private="false" Protected="false" Public="true" SingleLine="false" Static="false" Strictfp="false" Synchronized="false" Transient="false" Volatile="false" containsComment="false">
+                        <FormalParameters BeginColumn="28" BeginLine="13" EndColumn="61" EndLine="13" FindBoundary="false" Image="" ParameterCount="2" SingleLine="true">
+                            <FormalParameter Abstract="false" Array="false" ArrayDepth="0" BeginColumn="29" BeginLine="13" Default="false" EndColumn="42" EndLine="13" Final="false" FindBoundary="false" Image="" Modifiers="0" Native="false" PackagePrivate="true" Private="false" Protected="false" Public="false" SingleLine="true" Static="false" Strictfp="false" Synchronized="false" Transient="false" Varargs="false" Volatile="false">
+                                <Type Array="false" ArrayDepth="0" BeginColumn="29" BeginLine="13" EndColumn="34" EndLine="13" FindBoundary="false" Image="" SingleLine="true" TypeImage="String">
+                                    <ReferenceType Array="false" ArrayDepth="0" BeginColumn="29" BeginLine="13" EndColumn="34" EndLine="13" FindBoundary="false" Image="" SingleLine="true">
+                                        <ClassOrInterfaceType BeginColumn="29" BeginLine="13" EndColumn="34" EndLine="13" FindBoundary="false" Image="String" SingleLine="true"/>
+                                    </ReferenceType>
+                                </Type>
+                                <VariableDeclaratorId Array="false" ArrayDepth="0" BeginColumn="36" BeginLine="13" EndColumn="42" EndLine="13" ExceptionBlockParameter="false" FindBoundary="false" Image="message" SingleLine="true"/>
+                            </FormalParameter>
+                            <FormalParameter Abstract="false" Array="false" ArrayDepth="0" BeginColumn="45" BeginLine="13" Default="false" EndColumn="60" EndLine="13" Final="false" FindBoundary="false" Image="" Modifiers="0" Native="false" PackagePrivate="true" Private="false" Protected="false" Public="false" SingleLine="true" Static="false" Strictfp="false" Synchronized="false" Transient="false" Varargs="false" Volatile="false">
+                                <Type Array="false" ArrayDepth="0" BeginColumn="45" BeginLine="13" EndColumn="50" EndLine="13" FindBoundary="false" Image="" SingleLine="true" TypeImage="String">
+                                    <ReferenceType Array="false" ArrayDepth="0" BeginColumn="45" BeginLine="13" EndColumn="50" EndLine="13" FindBoundary="false" Image="" SingleLine="true">
+                                        <ClassOrInterfaceType BeginColumn="45" BeginLine="13" EndColumn="50" EndLine="13" FindBoundary="false" Image="String" SingleLine="true"/>
+                                    </ReferenceType>
+                                </Type>
+                                <VariableDeclaratorId Array="false" ArrayDepth="0" BeginColumn="52" BeginLine="13" EndColumn="60" EndLine="13" ExceptionBlockParameter="false" FindBoundary="false" Image="errorCode" SingleLine="true"/>
+                            </FormalParameter>
+                        </FormalParameters>
+                        <ExplicitConstructorInvocation ArgumentCount="1" BeginColumn="9" BeginLine="14" EndColumn="23" EndLine="14" FindBoundary="false" Image="" SingleLine="true" Super="true" This="false">
+                            <Arguments ArgumentCount="1" BeginColumn="14" BeginLine="14" EndColumn="22" EndLine="14" FindBoundary="false" Image="" SingleLine="true">
+                                <ArgumentList BeginColumn="15" BeginLine="14" EndColumn="21" EndLine="14" FindBoundary="false" Image="" SingleLine="true">
+                                    <Expression BeginColumn="15" BeginLine="14" EndColumn="21" EndLine="14" FindBoundary="false" Image="" SingleLine="true">
+                                        <PrimaryExpression BeginColumn="15" BeginLine="14" EndColumn="21" EndLine="14" FindBoundary="false" Image="" SingleLine="true">
+                                            <PrimaryPrefix BeginColumn="15" BeginLine="14" EndColumn="21" EndLine="14" FindBoundary="false" Image="" SingleLine="true" SuperModifier="false" ThisModifier="false">
+                                                <Name BeginColumn="15" BeginLine="14" EndColumn="21" EndLine="14" FindBoundary="false" Image="message" SingleLine="true"/>
+                                            </PrimaryPrefix>
+                                        </PrimaryExpression>
+                                    </Expression>
+                                </ArgumentList>
+                            </Arguments>
+                        </ExplicitConstructorInvocation>
+                        <BlockStatement Allocation="false" BeginColumn="9" BeginLine="15" EndColumn="33" EndLine="15" FindBoundary="false" Image="" SingleLine="true">
+                            <Statement BeginColumn="9" BeginLine="15" EndColumn="33" EndLine="15" FindBoundary="false" Image="" SingleLine="true">
+                                <StatementExpression BeginColumn="9" BeginLine="15" EndColumn="32" EndLine="15" FindBoundary="false" Image="" SingleLine="true">
+                                    <PrimaryExpression BeginColumn="9" BeginLine="15" EndColumn="22" EndLine="15" FindBoundary="false" Image="" SingleLine="true">
+                                        <PrimaryPrefix BeginColumn="9" BeginLine="15" EndColumn="12" EndLine="15" FindBoundary="false" Image="" SingleLine="true" SuperModifier="false" ThisModifier="true"/>
+                                        <PrimarySuffix ArgumentCount="-1" Arguments="false" ArrayDereference="false" BeginColumn="13" BeginLine="15" EndColumn="22" EndLine="15" FindBoundary="false" Image="errorCode" SingleLine="true"/>
+                                    </PrimaryExpression>
+                                    <AssignmentOperator BeginColumn="23" BeginLine="15" Compound="false" EndColumn="23" EndLine="15" FindBoundary="false" Image="=" SingleLine="true"/>
+                                    <Expression BeginColumn="24" BeginLine="15" EndColumn="32" EndLine="15" FindBoundary="false" Image="" SingleLine="true">
+                                        <PrimaryExpression BeginColumn="24" BeginLine="15" EndColumn="32" EndLine="15" FindBoundary="false" Image="" SingleLine="true">
+                                            <PrimaryPrefix BeginColumn="24" BeginLine="15" EndColumn="32" EndLine="15" FindBoundary="false" Image="" SingleLine="true" SuperModifier="false" ThisModifier="false">
+                                                <Name BeginColumn="24" BeginLine="15" EndColumn="32" EndLine="15" FindBoundary="false" Image="errorCode" SingleLine="true"/>
+                                            </PrimaryPrefix>
+                                        </PrimaryExpression>
+                                    </Expression>
+                                </StatementExpression>
+                            </Statement>
+                        </BlockStatement>
+                    </ConstructorDeclaration>
+                </ClassOrInterfaceBodyDeclaration>
+                <ClassOrInterfaceBodyDeclaration AnonymousInnerClass="false" BeginColumn="5" BeginLine="18" EndColumn="5" EndLine="20" EnumChild="false" FindBoundary="false" Image="" SingleLine="false">
+                    <MethodDeclaration Abstract="false" BeginColumn="12" BeginLine="18" Default="false" EndColumn="5" EndLine="20" Final="false" FindBoundary="false" Image="" InterfaceMember="false" MethodName="getErrorCode" Modifiers="1" Name="getErrorCode" Native="false" PackagePrivate="false" Private="false" Protected="false" Public="true" SingleLine="false" Static="false" Strictfp="false" Synchronized="false" SyntacticallyAbstract="false" SyntacticallyPublic="true" Transient="false" Void="false" Volatile="false">
+                        <ResultType BeginColumn="12" BeginLine="18" EndColumn="17" EndLine="18" FindBoundary="false" Image="" SingleLine="true" Void="false" returnsArray="false">
+                            <Type Array="false" ArrayDepth="0" BeginColumn="12" BeginLine="18" EndColumn="17" EndLine="18" FindBoundary="false" Image="" SingleLine="true" TypeImage="String">
+                                <ReferenceType Array="false" ArrayDepth="0" BeginColumn="12" BeginLine="18" EndColumn="17" EndLine="18" FindBoundary="false" Image="" SingleLine="true">
+                                    <ClassOrInterfaceType BeginColumn="12" BeginLine="18" EndColumn="17" EndLine="18" FindBoundary="false" Image="String" SingleLine="true"/>
+                                </ReferenceType>
+                            </Type>
+                        </ResultType>
+                        <MethodDeclarator BeginColumn="19" BeginLine="18" EndColumn="32" EndLine="18" FindBoundary="false" Image="getErrorCode" ParameterCount="0" SingleLine="true">
+                            <FormalParameters BeginColumn="31" BeginLine="18" EndColumn="32" EndLine="18" FindBoundary="false" Image="" ParameterCount="0" SingleLine="true"/>
+                        </MethodDeclarator>
+                        <Block BeginColumn="33" BeginLine="18" EndColumn="5" EndLine="20" FindBoundary="false" Image="" SingleLine="false" containsComment="false">
+                            <BlockStatement Allocation="false" BeginColumn="9" BeginLine="19" EndColumn="30" EndLine="19" FindBoundary="false" Image="" SingleLine="true">
+                                <Statement BeginColumn="9" BeginLine="19" EndColumn="30" EndLine="19" FindBoundary="false" Image="" SingleLine="true">
+                                    <ReturnStatement BeginColumn="9" BeginLine="19" EndColumn="30" EndLine="19" FindBoundary="false" Image="" SingleLine="true">
+                                        <Expression BeginColumn="16" BeginLine="19" EndColumn="29" EndLine="19" FindBoundary="false" Image="" SingleLine="true">
+                                            <PrimaryExpression BeginColumn="16" BeginLine="19" EndColumn="29" EndLine="19" FindBoundary="false" Image="" SingleLine="true">
+                                                <PrimaryPrefix BeginColumn="16" BeginLine="19" EndColumn="19" EndLine="19" FindBoundary="false" Image="" SingleLine="true" SuperModifier="false" ThisModifier="true"/>
+                                                <PrimarySuffix ArgumentCount="-1" Arguments="false" ArrayDereference="false" BeginColumn="20" BeginLine="19" EndColumn="29" EndLine="19" FindBoundary="false" Image="errorCode" SingleLine="true"/>
+                                            </PrimaryExpression>
+                                        </Expression>
+                                    </ReturnStatement>
+                                </Statement>
+                            </BlockStatement>
+                        </Block>
+                    </MethodDeclaration>
+                </ClassOrInterfaceBodyDeclaration>
+            </ClassOrInterfaceBody>
+        </ClassOrInterfaceDeclaration>
+    </TypeDeclaration>
+</CompilationUnit>

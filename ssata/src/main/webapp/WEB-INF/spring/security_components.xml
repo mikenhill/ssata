@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+		
+	<bean id="ROLE_EMPLOYEE" class="com.salmon.ssata.backend.dto.profile.AuthorityDTO">
+		<property name="authority" value="ROLE_EMPLOYEE"/>
+	</bean>
+	
+	<bean id="ROLE_CANDIDATE" class="com.salmon.ssata.backend.dto.profile.AuthorityDTO">
+		<property name="authority" value="ROLE_CANDIDATE"/>
+	</bean>
+		
+	<bean id="ROLE_ADMIN" class="com.salmon.ssata.backend.dto.profile.AuthorityDTO">
+		<property name="authority" value="ROLE_ADMIN"/>
+	</bean>
+	
+	<bean id="ROLE_ANONYMOUS" class="com.salmon.ssata.backend.dto.profile.AuthorityDTO">
+		<property name="authority" value="ROLE_ANONYMOUS"/>
+	</bean>
+	<util:map id="AUTHORITIES" map-class="java.util.HashMap">
+		<entry key="ROLE_EMPLOYEE" value-ref="ROLE_EMPLOYEE"/>
+		<entry key="ROLE_CANDIDATE" value-ref="ROLE_CANDIDATE"/>
+		<entry key="ROLE_ADMIN" value-ref="ROLE_ADMIN"/>
+		<entry key="ROLE_ANONYMOUS" value-ref="ROLE_ANONYMOUS"/>
+	</util:map>
+	
+	<util:list id="REQUIREDUSERS">
+	</util:list>
+	
+</beans>

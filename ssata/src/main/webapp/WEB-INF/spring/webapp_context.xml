@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:util="http://www.springframework.org/schema/util"	
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+ 		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">        
+
+	<security:global-method-security pre-post-annotations="enabled" /> 
+	
+	<mvc:annotation-driven />
+	<context:annotation-config/>
+	<!-- 	
+	<mvc:default-servlet-handler/>
+	
+	<mvc:resources mapping="/prod-imports/**" location="/prod-imports/" />
+  	<mvc:resources mapping="/images/**" location="/prod-imports/resources/svg/" />
+	-->
+	
+	<mvc:interceptors>
+	    <mvc:interceptor>
+	        <mvc:mapping path="/home/addgreeting.html"/>
+	        <bean class="com.salmon.ssata.web.interceptors.ConfigDataSetupInterceptor" />
+	    </mvc:interceptor>
+	</mvc:interceptors>
+
+	 <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver">
+		<property name="order" value="0" />
+	</bean>
+
+	<bean id="simplerHandlerMapping" 
+					class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter" />
+	
+	<context:component-scan base-package="com.salmon.ssata"/>
+	
+	<bean id="freemarkerViewResolver" 
+		class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+		<property name="cache" value="true" />
+		<property name="prefix" value="" />
+		<property name="suffix" value=".ftl" />
+		<property name="order" value="0" />
+	</bean>	
+	 	 
+	<bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+		<property name="defaultLocale" value="en"/>
+	</bean> 
+	
+	<mvc:interceptors>
+		<bean id="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+		<property name="paramName" value="language" />
+	</bean>    
+	</mvc:interceptors>
+	
+	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basenames">
+            <list>
+                <value>classpath:messages</value>
+                <value>classpath:validationMessages</value>
+                <value>classpath:screenCopyValues</value>
+                <value>classpath:JSMessages</value>
+            </list>
+        </property>
+	    <property name="defaultEncoding" value="UTF-8"/>
+	</bean>	
+
+	<bean id="handlerMapping"
+		class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+	</bean>
+	
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                 <bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"/>
+            </list>
+        </property>
+	</bean>
+</beans>

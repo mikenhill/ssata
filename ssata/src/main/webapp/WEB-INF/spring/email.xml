@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+		
+	<bean id="AdminMailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+	
+        <property name="host" value="smtp.mailgun.org"/>
+		<property name="username" value="postmaster@smtp.devsata.com"/>
+		<property name="password" value="bd0bc941e550d4558873c46c8162f7c8"/>
+		<property name="port" value="587"/>
+		<property name="javaMailProperties">
+			<props>
+	       	      <prop key="mail.smtp.auth">true</prop>
+	       	      <prop key="mail.smtp.starttls.enable">true</prop>
+			</props>
+		</property>
+	</bean>	
+	
+	<util:map id="MailSenderMap" map-class="java.util.HashMap">
+		<entry key="postmaster@smtp.devsata.com" value-ref="AdminMailSender"/>
+	</util:map>
+	
+</beans>
