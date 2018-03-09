@@ -10,7 +10,7 @@ import com.salmon.ssata.backend.dto.GenericDTO;
  *
  */
 public interface GenericDAO {
-
+	//mikePC-branch2
 	public void create(GenericDTO dto);
 	public void update(GenericDTO dto);
     public void updateAll(String query);
