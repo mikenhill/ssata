@@ -8,7 +8,7 @@ import com.salmon.ssata.backend.BackendException;
  *
  */
 public class DaoException extends BackendException {
-
+//lissPC
 	private static final long serialVersionUID = 899878074499611218L;
 
 	private String errorCode = "DAO_EXCEPTION";
